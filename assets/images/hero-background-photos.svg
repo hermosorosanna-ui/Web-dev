@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f3f0"/>
+      <stop offset="0.5" stop-color="#dedbd7"/>
+      <stop offset="1" stop-color="#bdb8b2"/>
+    </linearGradient>
+    <pattern id="p" width="140" height="140" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="34" r="18" fill="#ffffff" opacity=".10"/>
+      <circle cx="100" cy="92" r="30" fill="#ffffff" opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" fill="url(#p)"/>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="42" fill="#8f5c45" opacity=".75">HERO BACKGROUND</text>
+  <text x="600" y="475" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#5e544d" opacity=".75">Replace this image with the original mockup background</text>
+</svg>

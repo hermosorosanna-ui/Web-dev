@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-label="REPLACE IMAGE">
+<rect width="100%" height="100%" fill="#d7d7d5"/>
+<rect x="3%" y="3%" width="94%" height="94%" fill="none" stroke="#ad806e" stroke-width="3" stroke-dasharray="12 10"/>
+<g fill="#7e746d" text-anchor="middle" font-family="Georgia,serif">
+<text x="50%" y="47%" font-size="34">REPLACE IMAGE</text>
+<text x="50%" y="56%" font-size="18">Drop your original photo here</text>
+<text x="50%" y="64%" font-size="14">Keep the same image slot dimensions</text>
+</g></svg>
