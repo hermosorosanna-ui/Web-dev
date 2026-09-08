@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 
 <?php
 
 // Destroy the normal customer session.
 session_name('HERMOSO_SESSION');
+=======
+<?php
+
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 session_start();
 
 $_SESSION = [];
@@ -24,4 +29,7 @@ session_destroy();
 
 header('Location: index.php');
 exit;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec

@@ -1,10 +1,16 @@
 <?php
 
+<<<<<<< HEAD
 // Appointment requests and customer appointment cancellation use the same customer session.
 session_name('HERMOSO_SESSION');
 session_start();
 
 if (!isset($_SESSION['user_id']) || ($_SESSION['role'] ?? '') !== 'customer') {
+=======
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
     header('Location: login.php');
     exit;
 }
@@ -16,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 require 'database/config.php';
 
+<<<<<<< HEAD
 $action = $_POST['action'] ?? '';
 
 // Customer cancellation: only the logged-in customer's own pending/confirmed
@@ -59,6 +66,8 @@ if ($action === 'cancel') {
 }
 
 // Existing appointment-request flow.
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 $serviceId = filter_input(INPUT_POST, 'service_id', FILTER_VALIDATE_INT);
 $date = trim($_POST['appointment_date'] ?? '');
 $time = trim($_POST['appointment_time'] ?? '');

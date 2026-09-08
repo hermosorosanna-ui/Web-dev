@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <?php
 
@@ -6,6 +7,13 @@ session_name('HERMOSO_SESSION');
 session_start();
 
 if (!isset($_SESSION['user_id']) || ($_SESSION['role'] ?? '') !== 'customer') {
+=======
+<?php
+
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
     header('Location: login.php');
     exit;
 }
@@ -79,4 +87,7 @@ $services = $stmt->fetchAll();
 </main>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec

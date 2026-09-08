@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <?php
 // Customer session used throughout the normal website.
@@ -5,6 +6,12 @@ session_name('HERMOSO_SESSION');
 session_start();
 
 if (isset($_SESSION['user_id']) && ($_SESSION['role'] ?? '') === 'customer') {
+=======
+<?php
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
     header('Location: dashboard.php');
     exit;
 }
@@ -128,4 +135,7 @@ $message = $_GET['message'] ?? null;
 <script src="assets/js/auth.js"></script>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec

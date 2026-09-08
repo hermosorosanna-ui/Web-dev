@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 CREATE DATABASE IF NOT EXISTS hermoso_atelier
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
@@ -16,6 +19,7 @@ CREATE TABLE users (
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
+<<<<<<< HEAD
 -- Sample accounts
 -- Password for all three accounts: admin123
 -- The password is stored as a bcrypt hash compatible with password_verify().
@@ -27,6 +31,8 @@ INSERT INTO users (full_name, email, phone, password_hash, role) VALUES
 ('Customer Two', 'customer2@hermosoatelier.com', NULL,
  '$2y$12$KawP5d7MC7xLpmVahouO7OBjwkh.I8QfCmcnZzjWjs9lSEVpTpxCm', 'customer');
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 -- Services shown on the atelier website
 CREATE TABLE services (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 <?php
 
 function getConnection(): PDO

@@ -1,10 +1,16 @@
 <?php
 
+<<<<<<< HEAD
 // Customer dashboard must read the same session created by login_function.php.
 session_name('HERMOSO_SESSION');
 session_start();
 
 if (!isset($_SESSION['user_id']) || ($_SESSION['role'] ?? '') !== 'customer') {
+=======
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
     header('Location: login.php');
     exit;
 }
@@ -25,9 +31,12 @@ $stmt->bindValue(':user_id', $_SESSION['user_id'], PDO::PARAM_INT);
 $stmt->execute();
 $appointments = $stmt->fetchAll();
 
+<<<<<<< HEAD
 $status = $_GET['status'] ?? null;
 $message = $_GET['message'] ?? null;
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,12 +75,15 @@ $message = $_GET['message'] ?? null;
         <a href="logout.php" class="dashboard-link">LOG OUT</a>
     </div>
 
+<<<<<<< HEAD
     <?php if ($message): ?>
         <div class="auth-message <?= $status === 'error' ? 'error' : 'success' ?>">
             <?= htmlspecialchars($message, ENT_QUOTES, 'UTF-8') ?>
         </div>
     <?php endif; ?>
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
     <div class="dashboard-actions">
         <a href="book-appointment.php" class="auth-button inline-button">BOOK AN APPOINTMENT</a>
     </div>
@@ -93,7 +105,10 @@ $message = $_GET['message'] ?? null;
                             <th>DATE</th>
                             <th>TIME</th>
                             <th>STATUS</th>
+<<<<<<< HEAD
                             <th>ACTION</th>
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
                         </tr>
                     </thead>
                     <tbody>
@@ -103,6 +118,7 @@ $message = $_GET['message'] ?? null;
                             <td><?= htmlspecialchars($appointment['appointment_date'], ENT_QUOTES, 'UTF-8') ?></td>
                             <td><?= htmlspecialchars($appointment['appointment_time'], ENT_QUOTES, 'UTF-8') ?></td>
                             <td><?= htmlspecialchars(ucfirst($appointment['status']), ENT_QUOTES, 'UTF-8') ?></td>
+<<<<<<< HEAD
                             <td>
                                 <?php if (in_array($appointment['status'], ['pending', 'confirmed'], true)): ?>
                                     <form method="POST" action="appointment_function.php"
@@ -115,6 +131,8 @@ $message = $_GET['message'] ?? null;
                                     —
                                 <?php endif; ?>
                             </td>
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
                         </tr>
                     <?php endforeach; ?>
                     </tbody>

@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 
 <?php
 // Registration page checks the normal customer session.
 session_name('HERMOSO_SESSION');
+=======
+<?php
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
 session_start();
 
 if (isset($_SESSION['user_id'])) {
@@ -131,4 +135,7 @@ $message = $_GET['message'] ?? null;
 <script src="assets/js/auth.js"></script>
 </body>
 </html>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec

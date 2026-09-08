@@ -18,4 +18,8 @@ document.querySelectorAll('.password-toggle').forEach((button) => {
             showing ? 'Show password' : 'Hide password'
         );
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 8dc5399113603236efb726c8becb8ab1ef1509ec
