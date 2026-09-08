@@ -1,3 +1,4 @@
+
 /*
   Hermoso Atelier mockup replica
   Primary design font requested: Californian FB.
@@ -574,18 +575,12 @@ img {
   margin-top: 0.2rem;
 }
 .footer-nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2vw;
-  align-self: stretch;
-  align-items: center;
-}
-.footer-nav {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3vw;
   row-gap: 2vh;
+  align-self: stretch;
   align-items: start;
   padding: 3vh 2vw 5vh;
 }
@@ -609,11 +604,6 @@ img {
   font-size: clamp(13px, 0.9vw, 18px);
   white-space: nowrap;
 }
-.copyright {
-  font-size: 0.95em;
-  text-align: center;
-  margin-top: 1vh;
-}
 .footer-social {
   border-left: 1px solid var(--accent);
   padding-left: 1.5vw;
@@ -629,9 +619,8 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-
   color: #fff;
-  font-size: clamp(14px, 0.9vw, 18px);
+  font-size: clamp(18px, 1.15vw, 25px);
 }
 
 .social-icon {
@@ -662,12 +651,6 @@ img {
 .footer-social a:hover > span:last-child {
   color: var(--accent);
   transition: color 0.25s ease;
-}
-.footer-social a {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-size: clamp(18px, 1.15vw, 25px);
 }
 .footer-social a::first-letter {
   background: var(--accent);
@@ -887,9 +870,6 @@ img {
 
 .gallery-tile:hover {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
-}
-
-@media (max-width: 640px) {
 }
 
 /* =========================================
