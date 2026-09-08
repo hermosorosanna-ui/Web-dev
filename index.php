@@ -1,3 +1,4 @@
+
 <?php
 $pageTitle = 'Hermoso Atelier';
 ?>
@@ -30,7 +31,7 @@ $pageTitle = 'Hermoso Atelier';
       <a href="#services">SERVICES</a>
       <a href="#gallery">GALLERY</a>
       <a href="#contact">CONTACT US</a>
-      <a href="#contact" class="nav-cta">BOOK A CONSULTATION</a>
+      <a href="login.php" class="nav-cta">BOOK A CONSULTATION</a>
     </nav>
 
     <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">☰</button>
@@ -42,7 +43,7 @@ $pageTitle = 'Hermoso Atelier';
     <a href="#services">SERVICES</a>
     <a href="#gallery">GALLERY</a>
     <a href="#contact">CONTACT US</a>
-    <a href="#contact" class="nav-cta">BOOK A CONSULTATION</a>
+    <a href="login.php" class="nav-cta">BOOK A CONSULTATION</a>
   </nav>
 
   <main>
@@ -55,7 +56,7 @@ $pageTitle = 'Hermoso Atelier';
         <p class="hero-quote">Where timeless style meets<br>exceptional craftsmanship.</p>
         <p class="hero-body">We create bespoke designs that reflect your unique<br class="desktop-only"> personality and bring your vision to life.</p>
         <div class="button-row">
-          <a href="#contact" class="button filled">BOOK A CONSULTATION</a>
+          <a href="login.php" class="button filled">BOOK A CONSULTATION</a>
           <a href="#gallery" class="button outline">EXPLORE COLLECTION</a>
         </div>
       </div>
